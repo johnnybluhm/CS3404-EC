@@ -11,7 +11,6 @@ function openModal() {
 
 	// When the user starts to type something inside the password field
 	myInput.onkeyup = function() {
-       console.log('helllooo')
         
         /* TODO: Question 1.1: Starts here */
         var lowerCaseLetters = /[a-z]+/g; // : Fill in the regular experssion for lowerCaseLetters
@@ -87,7 +86,6 @@ function openModal() {
     }
 }
 
-
 function enableButton(letter, capital, number, length, match) {
     // TODO: Clear this function for students to implement    
     var button = document.getElementById('my_submit_button');
@@ -98,8 +96,6 @@ function enableButton(letter, capital, number, length, match) {
             button.disabled = false;
         }        
     }    
-
-
 function onClickFunction() {
-    alert("Hey! I'm all green! Well done.")
+    alert("You're all logged in!(Hard coding sucks)")
 }
