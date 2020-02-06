@@ -12,17 +12,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./login.css">
-	<script type="text/javascript" src="./login.js"></script>
+	
 </head>
 
-<body>
+<body id="body">
 
   <div class="topnav">
     <a href="./login.html">Log In</a>
     <a href="./index.html">Home</a>
     <input type="text" placeholder="Search..">
   </div>
-	<div class="jumbotron jumbotron-fluid">
+	<div class="jumbotron jumbotron-fluid" id="jumbo">
 		<div class="container">
 			<h1>Login Page</h1>
 		</div>
@@ -30,7 +30,7 @@
 
 
 	<div class="form-group">
-		<input type="text" class="form-control" name="firstName" placeholder="Username"
+		<input type="text" id="user" class="form-control" name="firstName" placeholder="Username"
 		required="required">
 	</div>
 
@@ -40,8 +40,10 @@
 	</div>
 	<div class="form-group">
 		<button id="my_submit_button" class="btn btn-primary btn-block login-btn" 
-		onClick="onClickFunction()">Log In</button>
+		onClick="onClickFunction()" disabled="true">Log In</button>
 	</div>
+
+	<script type="text/javascript" src="./login.js"></script>
 
 </body>
 
